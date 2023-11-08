@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Servlets</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+	<servlet>
+  		<servlet-name>GenericHelloWorld</servlet-name>
+  		<servlet-class>examples.GenericHelloWorld</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GenericHelloWorld</servlet-name>
+  		<url-pattern>/GenericHelloWorld</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>HttpHelloWorld</servlet-name>
+		<servlet-class>examples.HttpHelloWorld</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HttpHelloWorld</servlet-name>
+		<url-pattern>/HttpHelloWorld</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CellphoneGetServlet</servlet-name>
+		<servlet-class>examples.CellphoneGetServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CellphoneGetServlet</servlet-name>
+		<url-pattern>/CellphoneGetServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CellphonePostServlet</servlet-name>
+		<servlet-class>examples.CellphonePostServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CellphonePostServlet</servlet-name>
+		<url-pattern>/CellphonePostServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddCookieServlet</servlet-name>
+		<servlet-class>examples.AddCookieServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddCookieServlet</servlet-name>
+		<url-pattern>/AddCookieServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>HttpSessionExample</servlet-name>
+		<servlet-class>examples.HttpSessionExample</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HttpSessionExample</servlet-name>
+		<url-pattern>/HttpSessionExample</url-pattern>	
+	</servlet-mapping>
+
+</web-app>
